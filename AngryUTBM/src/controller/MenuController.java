@@ -264,7 +264,7 @@ public class MenuController implements KeyListener, ActionListener, MouseListene
 		
 		if(e.getSource().equals(deleteButton))
 		{
-			int option = javax.swing.JOptionPane.showConfirmDialog(null, "Are you sure ?", "Confirmation before suppression", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+			int option = javax.swing.JOptionPane.showConfirmDialog(null, "En êtes-vous sûr ?", "Confirmation avant suppression", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 			if(option == JOptionPane.OK_OPTION)
 			{
 				//suppression du fichier choisi
