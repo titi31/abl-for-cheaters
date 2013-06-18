@@ -36,7 +36,7 @@ public class MenuDifficultyView extends GameViewMenu
         mediumButton.setForeground(Color.WHITE);
 
         
-        hardButton = new JButton("HARD");
+        hardButton = new JButton("DIFFICILE");
         hardButton.setSize(200,30);
         hardButton.setLocation(frameWidth/2-100, 400);
         hardButton.setBackground(AFRedColor);
