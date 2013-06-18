@@ -20,7 +20,7 @@ public class MenuHomeView extends GameViewMenu
         newButton.setBackground(AFBlueColor);
         newButton.setForeground(KLMBlueColor);
         
-        loadButton = new JButton("LOAD GAME");
+        loadButton = new JButton("CHARGER PARTIE");
         loadButton.setSize(200,30);
         loadButton.setLocation(frameWidth/2-100, 225);
         loadButton.setBackground(AFBlueColor);
