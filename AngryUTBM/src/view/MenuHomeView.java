@@ -14,7 +14,7 @@ public class MenuHomeView extends GameViewMenu
 	
 	public MenuHomeView() {
 		
-        newButton = new JButton("NEW GAME");
+        newButton = new JButton("NOUVELLE PARTIE");
         newButton.setSize(200,30);
         newButton.setLocation(frameWidth/2-100, 150);
         newButton.setBackground(AFBlueColor);
