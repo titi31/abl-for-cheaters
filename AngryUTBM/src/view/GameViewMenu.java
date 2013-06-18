@@ -51,7 +51,7 @@ public abstract class GameViewMenu extends JLayeredPane {
 	    setFocusable(true);
         setDoubleBuffered(true);
 
-        backButton = new JButton("BACK");
+        backButton = new JButton("RETOUR");
         backButton.setSize(100,30);
         backButton.setLocation(1000, 500);
         backButton.setBackground(KLMBlueColor);
