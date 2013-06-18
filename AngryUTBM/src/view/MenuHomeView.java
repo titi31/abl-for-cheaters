@@ -26,7 +26,7 @@ public class MenuHomeView extends GameViewMenu
         loadButton.setBackground(AFBlueColor);
         loadButton.setForeground(KLMBlueColor);
         
-        optionsButton = new JButton("CONTROLS");
+        optionsButton = new JButton("CONTRÔLES");
         optionsButton.setSize(200,30);
         optionsButton.setLocation(frameWidth/2-100, 300);
         optionsButton.setBackground(AFBlueColor);
