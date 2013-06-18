@@ -19,7 +19,7 @@ public class MenuDifficultyView extends GameViewMenu
 	public MenuDifficultyView()
 	{
 		
-        difficultyLabel = new JLabel("Choose difficulty :");
+        difficultyLabel = new JLabel("Choisir difficulté :");
         difficultyLabel.setSize(200, 30);
         difficultyLabel.setLocation(frameWidth/2-100,150);
 		
