@@ -177,7 +177,7 @@ public class MenuController implements KeyListener, ActionListener, MouseListene
 		
 		if (e.getSource().equals(exitButton))
 		{
-			int option = javax.swing.JOptionPane.showConfirmDialog(null, "Are you sure ?", "Exit confirmation", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+			int option = javax.swing.JOptionPane.showConfirmDialog(null, "En êtes-vous sûr ?", "Confirmation de sortie", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
 			if(option == JOptionPane.OK_OPTION)
 			{
 				System.exit(0);		
