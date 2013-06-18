@@ -25,7 +25,7 @@ public class MenuOptionsView extends GameViewMenu
 		ImageIcon ii = new ImageIcon(controlsImagePath);
 	    image = ii.getImage();
 	    
-	    controlsLabel = new JLabel("Controls :");
+	    controlsLabel = new JLabel("Contrôles :");
         controlsLabel.setSize(200, 30);
         controlsLabel.setLocation(frameWidth/2-200,150);
         
