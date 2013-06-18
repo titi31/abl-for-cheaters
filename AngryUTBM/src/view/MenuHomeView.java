@@ -32,7 +32,7 @@ public class MenuHomeView extends GameViewMenu
         optionsButton.setBackground(AFBlueColor);
         optionsButton.setForeground(KLMBlueColor);
         
-        exitButton = new JButton("EXIT GAME");
+        exitButton = new JButton("SORTIR DU JEU");
         exitButton.setSize(200,30);
         exitButton.setLocation(frameWidth/2-100, 375);
         exitButton.setBackground(AFBlueColor);
