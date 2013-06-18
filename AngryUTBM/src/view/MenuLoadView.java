@@ -36,7 +36,7 @@ public class MenuLoadView extends GameViewMenu
         okLoadButton.setBackground(AFBlueColor);
         okLoadButton.setForeground(KLMBlueColor);
 
-        deleteButton = new JButton("DELETE");
+        deleteButton = new JButton("SUPPRIMER");
         deleteButton.setSize(200,30);
         deleteButton.setLocation(frameWidth/2-100, 300);
         deleteButton.setBackground(AFRedColor);
