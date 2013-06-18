@@ -23,7 +23,7 @@ public class MenuDifficultyView extends GameViewMenu
         difficultyLabel.setSize(200, 30);
         difficultyLabel.setLocation(frameWidth/2-100,150);
 		
-        easyButton = new JButton("EASY");
+        easyButton = new JButton("FACILE");
         easyButton.setSize(200,30);
         easyButton.setLocation(frameWidth/2-100, 250);
         easyButton.setBackground(KLMBlueColor);
