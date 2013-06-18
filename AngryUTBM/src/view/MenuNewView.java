@@ -18,7 +18,7 @@ public class MenuNewView extends GameViewMenu
 	
 	public MenuNewView()
 	{
-        playernameLabel = new JLabel("Enter your name :");
+        playernameLabel = new JLabel("Votre nom :");
         playernameLabel.setSize(200, 30);
         playernameLabel.setLocation(frameWidth/2-100,150);
         
