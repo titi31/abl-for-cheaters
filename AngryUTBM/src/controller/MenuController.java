@@ -110,7 +110,7 @@ public class MenuController implements KeyListener, ActionListener, MouseListene
 			button.addActionListener(this);
 		}
 		
-		JOptionPane.setDefaultLocale(Locale.ENGLISH);
+		JOptionPane.setDefaultLocale(Locale.FRENCH);
 	}
 	
 	@Override
