@@ -188,7 +188,7 @@ public class MenuController implements KeyListener, ActionListener, MouseListene
 		{			
 			if (playerNameField.getText().equals(""))
 			{
-				javax.swing.JOptionPane.showMessageDialog(null, "You must enter your name, please.");
+				javax.swing.JOptionPane.showMessageDialog(null, "Entrez votre nom pour continuer.");
 			}		
 			else 
 			{				
