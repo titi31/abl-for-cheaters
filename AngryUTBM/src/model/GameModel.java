@@ -325,7 +325,7 @@ public class GameModel implements ActionListener {
 	}
 	
 	public void lose() {
-		javax.swing.JOptionPane.showMessageDialog(null, "GAME OOOOOVER ! Try again ?");
+		javax.swing.JOptionPane.showMessageDialog(null, "Ouaiche ! Même pas cap de rejouer ?");
 		
 		Level lvl = new Level("res/maps/lvl0" + (currentLevel) + ".txt",difficulty);
 		if (lvl.isLoaded()) {
