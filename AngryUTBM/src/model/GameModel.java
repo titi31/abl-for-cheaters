@@ -311,7 +311,7 @@ public class GameModel implements ActionListener {
 	}
 	
 	public void win() {
-		javax.swing.JOptionPane.showMessageDialog(null, "Congrats you win ! Your score is " + score+".");
+		javax.swing.JOptionPane.showMessageDialog(null, "La classe !!!! Ton score de " + score +" points déchire.");
 		currentPlayer.finished(currentLevel, difficulty, score);
 		Level lvl = new Level("res/maps/lvl0" + (currentLevel+1) + ".txt",difficulty);
 		if (lvl.isLoaded()) {
