@@ -13,6 +13,8 @@ public class MenuNewView extends GameViewMenu
 	JTextField playernameField;
 	JButton okNewButton;
 	private Color AFBlueColor = new Color(12,25,74);
+	private Color KLMBlueColor = new Color(114,208,241);
+
 	
 	public MenuNewView()
 	{
@@ -28,6 +30,7 @@ public class MenuNewView extends GameViewMenu
    	 	okNewButton.setSize(200,30);
    	 	okNewButton.setLocation(frameWidth/2-100, 350);
         okNewButton.setBackground(AFBlueColor);
+        okNewButton.setForeground(KLMBlueColor);
 
    	 	
    	    //ajout des attributs avec l'index 1 pour etre en premier plan
