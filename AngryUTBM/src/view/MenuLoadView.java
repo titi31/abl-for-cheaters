@@ -1,5 +1,6 @@
 package view;
 
+import java.awt.Color;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -13,6 +14,8 @@ public class MenuLoadView extends GameViewMenu
 	//declaration des attributs adaptes a la page de chargement de parties
 	private JComboBox playersList;
 	private JButton okLoadButton, deleteButton;
+	private Color AFBlueColor = new Color(12,25,74);
+	private Color AFRedColor = new Color(248,0,0);
 
 	public MenuLoadView(ArrayList<Player> players)
 	{
@@ -29,10 +32,12 @@ public class MenuLoadView extends GameViewMenu
         okLoadButton = new JButton("OK");
         okLoadButton.setSize(200,30);
         okLoadButton.setLocation(frameWidth/2-100, 200);
-        
+        okLoadButton.setBackground(AFBlueColor);
+
         deleteButton = new JButton("DELETE");
         deleteButton.setSize(200,30);
         deleteButton.setLocation(frameWidth/2-100, 300);
+        deleteButton.setBackground(AFRedColor);
         
         
         //ajout des attributs avec l'index 1 pour etre en premier plan
