@@ -12,6 +12,7 @@ public class MenuDifficultyView extends GameViewMenu
 	private JLabel difficultyLabel;
 	private JButton easyButton, mediumButton, hardButton;
 	private String parentPanel="";
+	private Color AFBlueColor = new Color(12,25,74);
 	private Color KLMBlueColor = new Color(114,208,241);
 
 	public MenuDifficultyView()
@@ -30,6 +31,7 @@ public class MenuDifficultyView extends GameViewMenu
         mediumButton = new JButton("MEDIUM");
         mediumButton.setSize(200,30);
         mediumButton.setLocation(frameWidth/2-100, 325);
+        mediumButton.setBackground(AFBlueColor);
         
         hardButton = new JButton("HARD");
         hardButton.setSize(200,30);
