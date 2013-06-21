@@ -104,8 +104,6 @@ public class MenuController implements KeyListener, ActionListener, MouseListene
 		mediumButton.addActionListener(this);
 		hardButton = angryMenuDifficultyView.getHardButton();
 		hardButton.addActionListener(this);
-		extremeButton = angryMenuDifficultyView.getExtremeButton();
-		extremeButton.addActionListener(this);
 		
 		lvlButtons = angryMenuLevelView.getLvlButtons();
 		for (JButton button : lvlButtons) {

@@ -9,7 +9,7 @@ public class MenuDifficultyView extends GameViewMenu
 
 	//declaration des attributs adaptes a la page de choix de difficulte
 	private JLabel difficultyLabel;
-	private JButton easyButton, mediumButton, hardButton, extremeButton;
+	private JButton easyButton, mediumButton, hardButton;
 	private String parentPanel="";
 	
 	public MenuDifficultyView()
@@ -31,16 +31,12 @@ public class MenuDifficultyView extends GameViewMenu
         hardButton.setSize(200,30);
         hardButton.setLocation(frameWidth/2-100, 400);
         
-        extremeButton = new JButton("EXTREME");
-        extremeButton.setSize(200,30);
-        extremeButton.setLocation(frameWidth/2-100, 475);
         
         //ajout des attributs avec l'index 1 pour etre en premier plan
    	 	this.add(difficultyLabel,new Integer(1));
    	 	this.add(easyButton,new Integer(1));
    	 	this.add(mediumButton,new Integer(1));
    	 	this.add(hardButton,new Integer(1));
-   	 	this.add(extremeButton,new Integer(1));
 	}
 	
 	public JButton getEasyButton()
@@ -58,10 +54,6 @@ public class MenuDifficultyView extends GameViewMenu
 		return hardButton;
 	}
 	
-	public JButton getExtremeButton()
-	{
-		return extremeButton;
-	}
 	
 	public String getParentPanel()
 	{

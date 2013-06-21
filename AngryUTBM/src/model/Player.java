@@ -16,19 +16,16 @@ public class Player implements Serializable {
 	private ArrayList<Integer> easyScores;
 	private ArrayList<Integer> mediumScores;
 	private ArrayList<Integer> hardScores;
-	private ArrayList<Integer> extremeScores;
 	
 	//meilleurs scores par niveaux et difficultes
 	private ArrayList<Integer> highestEasyScores;
 	private ArrayList<Integer> highestMediumScores;
 	private ArrayList<Integer> highestHardScores;
-	private ArrayList<Integer> highestExtremeScores;
 	
 	//niveaux debloques
 	private ArrayList<Integer> easy;
 	private ArrayList<Integer> medium;
 	private ArrayList<Integer> hard;
-	private ArrayList<Integer> extreme;
 	
 	@SuppressWarnings("unused")
 	private int levelNumber;
@@ -41,17 +38,14 @@ public class Player implements Serializable {
 		easy = new ArrayList<Integer>();
 		medium = new ArrayList<Integer>();
 		hard = new ArrayList<Integer>();
-		extreme = new ArrayList<Integer>();
 		
 		easyScores = new ArrayList<Integer>();
 		mediumScores = new ArrayList<Integer>();
 		hardScores = new ArrayList<Integer>();
-		extremeScores = new ArrayList<Integer>();
 		
 		highestEasyScores = new ArrayList<Integer>();
 		highestMediumScores = new ArrayList<Integer>();
 		highestHardScores = new ArrayList<Integer>();
-		highestExtremeScores = new ArrayList<Integer>();
 		
 		
 		//permet de creer des listes de la bonne taille et ainsi d'eviter les OutOfBoundExceptions
@@ -59,12 +53,10 @@ public class Player implements Serializable {
 			easyScores.add(0);
 			mediumScores.add(0);
 			hardScores.add(0);
-			extremeScores.add(0);
 			
 			highestEasyScores.add(0);
 			highestMediumScores.add(0);
 			highestHardScores.add(0);
-			highestExtremeScores.add(0);
 			
 		}
 		
@@ -137,12 +129,6 @@ public class Player implements Serializable {
 			hardScores.set(level-1, score);
 			if (score > highestHardScores.get(level-1))
 				highestHardScores.set(level-1, score);
-		} else if (difficulty.equals("extreme")) {
-			if (!(extreme.contains(level)))
-				extreme.add(level);
-			extremeScores.set(level-1, score);
-			if (score > highestExtremeScores.get(level-1))
-				highestExtremeScores.set(level-1, score);
 		}
 		save(); // actualisation de la sauvegarde
 	}
@@ -158,8 +144,6 @@ public class Player implements Serializable {
 			return highestMediumScores.get(level);
 		} else if (difficulty.equals("hard")) {
 			return highestHardScores.get(level);
-		} else if (difficulty.equals("extreme")) {
-			return highestExtremeScores.get(level);
 		}
 		return 0;
 	}
