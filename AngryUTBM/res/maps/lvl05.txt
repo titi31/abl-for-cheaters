@@ -3,6 +3,13 @@ Humming Bird
 Pigeon
 Pigeon
 Pigeon
+Sparrow
+Humming Bird
+Pigeon
+Humming Bird
+Pigeon
+Humming Bird
+Humming Bird
 Map
 00000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000
