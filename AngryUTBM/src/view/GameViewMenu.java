@@ -1,6 +1,8 @@
 package view;
 
 import main.GameFrame;
+
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -21,6 +23,7 @@ public abstract class GameViewMenu extends JLayeredPane {
 	private String backgroundImagePath = "res/images/background.png";
 	private Image image,title;
 	private JPanel backPanel;
+	private Color KLMBlueColor = new Color(114,208,241);
 	
 	//bouton de retour herite sur toutes les pages
 	protected JButton backButton;
@@ -47,10 +50,12 @@ public abstract class GameViewMenu extends JLayeredPane {
 		backPanel.setSize(new Dimension(frameWidth, frameHeight));
 	    setFocusable(true);
         setDoubleBuffered(true);
-        
+
         backButton = new JButton("BACK");
         backButton.setSize(100,30);
         backButton.setLocation(1000, 500);
+        backButton.setBackground(KLMBlueColor);
+
         
         this.add(backPanel,new Integer(0)); //le backPanel a un index de 0 pour etre en arriere plan de tous les autres objets qui auront un index de 1
         this.add(backButton,new Integer(1));
