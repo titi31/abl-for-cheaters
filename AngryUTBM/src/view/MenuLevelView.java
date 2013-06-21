@@ -25,6 +25,7 @@ public class MenuLevelView extends GameViewMenu
         	int lineNumber = lvlNumber / 5;
         	lvlButtons.get(lvlNumber).setLocation(frameWidth/2-190+(lvlNumber%5)*80,frameHeight/2-80 + lineNumber*80);
         	lvlButtons.get(lvlNumber).setBackground(AFBlueColor);
+        	lvlButtons.get(lvlNumber).setForeground(Color.WHITE);
         }
         
         //ajout des boutons avec un index d'1 pour etre en premier plan
