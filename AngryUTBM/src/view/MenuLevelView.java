@@ -1,5 +1,6 @@
 package view;
 
+import java.awt.Color;
 import java.util.ArrayList;
 
 import javax.swing.JButton;
@@ -11,6 +12,7 @@ public class MenuLevelView extends GameViewMenu
 {
 	//declaration des attributs adaptes a la page de choix de level
 	private ArrayList<JButton> lvlButtons;
+	private Color AFBlueColor = new Color(12,25,74);
 
 	public MenuLevelView()
 	{
@@ -22,6 +24,7 @@ public class MenuLevelView extends GameViewMenu
         	lvlButtons.get(lvlNumber).setSize(60,60);
         	int lineNumber = lvlNumber / 5;
         	lvlButtons.get(lvlNumber).setLocation(frameWidth/2-190+(lvlNumber%5)*80,frameHeight/2-80 + lineNumber*80);
+        	lvlButtons.get(lvlNumber).setBackground(AFBlueColor);
         }
         
         //ajout des boutons avec un index d'1 pour etre en premier plan
