@@ -13,6 +13,7 @@ public class MenuDifficultyView extends GameViewMenu
 	private JButton easyButton, mediumButton, hardButton;
 	private String parentPanel="";
 	private Color AFBlueColor = new Color(12,25,74);
+	private Color AFRedColor = new Color(248,0,0);
 	private Color KLMBlueColor = new Color(114,208,241);
 
 	public MenuDifficultyView()
@@ -38,6 +39,7 @@ public class MenuDifficultyView extends GameViewMenu
         hardButton = new JButton("HARD");
         hardButton.setSize(200,30);
         hardButton.setLocation(frameWidth/2-100, 400);
+        hardButton.setBackground(AFRedColor);
         
         
         //ajout des attributs avec l'index 1 pour etre en premier plan
