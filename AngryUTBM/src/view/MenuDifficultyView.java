@@ -40,6 +40,7 @@ public class MenuDifficultyView extends GameViewMenu
         hardButton.setSize(200,30);
         hardButton.setLocation(frameWidth/2-100, 400);
         hardButton.setBackground(AFRedColor);
+        hardButton.setForeground(Color.WHITE);
         
         
         //ajout des attributs avec l'index 1 pour etre en premier plan
