@@ -13,7 +13,7 @@ public class Pigeon extends Bird {
 	    image = ii.getImage();
 	    speed = 100;
 	    eggs = new ArrayList<Egg>();
-	    eggLeft = 3;
+	    eggLeft = 5;
 	    frameSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
 	}
     
