@@ -13,7 +13,7 @@ public class HummingBird extends Bird {
 	    imageHeight = ii.getIconHeight();
 	    imageWidth = ii.getIconWidth();
 	    eggs = new ArrayList<Egg>();
-	    eggLeft = 1;
+	    eggLeft = 3;
 	    frameSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
 	}
     
