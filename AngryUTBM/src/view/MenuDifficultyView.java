@@ -2,6 +2,7 @@ package view;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import java.awt.Color;
 
 @SuppressWarnings("serial")
 public class MenuDifficultyView extends GameViewMenu
@@ -11,7 +12,8 @@ public class MenuDifficultyView extends GameViewMenu
 	private JLabel difficultyLabel;
 	private JButton easyButton, mediumButton, hardButton;
 	private String parentPanel="";
-	
+	private Color KLMBlueColor = new Color(114,208,241);
+
 	public MenuDifficultyView()
 	{
 		
@@ -22,7 +24,8 @@ public class MenuDifficultyView extends GameViewMenu
         easyButton = new JButton("EASY");
         easyButton.setSize(200,30);
         easyButton.setLocation(frameWidth/2-100, 250);
-        
+        easyButton.setBackground(KLMBlueColor);
+
         mediumButton = new JButton("MEDIUM");
         mediumButton.setSize(200,30);
         mediumButton.setLocation(frameWidth/2-100, 325);
