@@ -3,6 +3,7 @@ package view;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import java.awt.Color;
 
 @SuppressWarnings("serial")
 public class MenuNewView extends GameViewMenu
@@ -11,7 +12,8 @@ public class MenuNewView extends GameViewMenu
 	JLabel playernameLabel;
 	JTextField playernameField;
 	JButton okNewButton;
-
+	private Color AFBlueColor = new Color(12,25,74);
+	
 	public MenuNewView()
 	{
         playernameLabel = new JLabel("Enter your name :");
@@ -25,6 +27,8 @@ public class MenuNewView extends GameViewMenu
    	 	okNewButton = new JButton("OK");
    	 	okNewButton.setSize(200,30);
    	 	okNewButton.setLocation(frameWidth/2-100, 350);
+        okNewButton.setBackground(AFBlueColor);
+
    	 	
    	    //ajout des attributs avec l'index 1 pour etre en premier plan
         this.add(playernameLabel,new Integer(1));
