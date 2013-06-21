@@ -16,6 +16,7 @@ public class MenuLoadView extends GameViewMenu
 	private JButton okLoadButton, deleteButton;
 	private Color AFBlueColor = new Color(12,25,74);
 	private Color AFRedColor = new Color(248,0,0);
+	private Color KLMBlueColor = new Color(114,208,241);
 
 	public MenuLoadView(ArrayList<Player> players)
 	{
@@ -33,11 +34,13 @@ public class MenuLoadView extends GameViewMenu
         okLoadButton.setSize(200,30);
         okLoadButton.setLocation(frameWidth/2-100, 200);
         okLoadButton.setBackground(AFBlueColor);
+        okLoadButton.setForeground(KLMBlueColor);
 
         deleteButton = new JButton("DELETE");
         deleteButton.setSize(200,30);
         deleteButton.setLocation(frameWidth/2-100, 300);
         deleteButton.setBackground(AFRedColor);
+        deleteButton.setForeground(Color.WHITE);
         
         
         //ajout des attributs avec l'index 1 pour etre en premier plan
