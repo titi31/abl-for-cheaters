@@ -104,7 +104,16 @@ public class Player implements Serializable {
 
 	//retourne le numero du dernier level debloque
 	public boolean isFinished(int level, String difficulty) {
-		return true;
+		if (difficulty.equals("easy")) {
+			return easy.contains(level);
+		} else if (difficulty.equals("normal")) {
+			return medium.contains(level);
+		} else if (difficulty.equals("hard")){
+			return hard.contains(level);
+		} else if (difficulty.equals("extreme")){
+			return extreme.contains(level);
+		}
+		return false;
 	}
 
 	//actualise le numero du dernier niveau debloque avec le score effectue
