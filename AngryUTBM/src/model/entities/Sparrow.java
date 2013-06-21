@@ -15,7 +15,7 @@ public class Sparrow extends Bird {
 	    imageWidth = ii.getIconWidth();
 	    speed = 100;
 	    eggs = new ArrayList<Egg>();
-	    eggLeft = 1;
+	    eggLeft = 2;
 	    frameSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
 	}
     
