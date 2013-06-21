@@ -55,6 +55,7 @@ public abstract class GameViewMenu extends JLayeredPane {
         backButton.setSize(100,30);
         backButton.setLocation(1000, 500);
         backButton.setBackground(KLMBlueColor);
+        backButton.setForeground(Color.WHITE);
 
         
         this.add(backPanel,new Integer(0)); //le backPanel a un index de 0 pour etre en arriere plan de tous les autres objets qui auront un index de 1
