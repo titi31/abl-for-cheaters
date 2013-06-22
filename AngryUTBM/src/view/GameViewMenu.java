@@ -20,7 +20,7 @@ public abstract class GameViewMenu extends JLayeredPane {
 
 	//attribut pour realiser le fond de spages de menu
 	private String titleImagePath = "res/images/title.png";
-	private String backgroundImagePath = "res/images/background.png";
+	private String backgroundImagePath = "res/images/background-title.png";
 	private Image image,title;
 	private JPanel backPanel;
 	private Color KLMBlueColor = new Color(114,208,241);
@@ -41,7 +41,7 @@ public abstract class GameViewMenu extends JLayeredPane {
 	    backPanel= new JPanel() {
 	    
 			public void paint(Graphics g) {
-				g.drawImage(image, 0, 0,frameWidth, frameHeight, null);
+				g.drawImage(image,0,0,null);
 				g.drawImage(title,frameWidth/2-295, 20, null);
 			
 			}
